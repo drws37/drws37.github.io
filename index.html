@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./index.js"></script>
+    <title>Транслит</title>
+  </head>
+  <body>
+    <div class="header">T.R.A.N.S.L.I.T</div>
+    <div class="main">
+      <div class="inputForm">
+        <input id="inputField" type="text" placeholder="Введите текст" />
+        <button id="inputButton">Добавить</button>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="ru"><span class="index">1</span>Привет 👋</div>
+          <div class="tr">Privet</div>
+          <button class="rowCross">
+            <img src="./icons/Cross.svg" alt="delete" />
+          </button>
+        </div>
+      </div>
+      <div class="clearAll">
+        <img id="clearCross" src="./icons/Cross.svg" alt="delete" />
+        <button id="clearButton">Очистить всё</button>
+      </div>
+    </div>
+  </body>
+</html>

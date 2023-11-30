@@ -1,0 +1,221 @@
+* {
+  --main-purple: #4520ab;
+  --black: #111111;
+  --ligth-grey: #f0f0f0;
+  --grey: #adadad;
+  --white: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0 16px;
+}
+
+.main,
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 600;
+
+  color: var(--main-purple);
+  margin: 50px 0;
+  max-width: 100%;
+}
+/* <----------------Стили поля Ввода-------------------> */
+.inputForm {
+  display: flex;
+  position: relative;
+  min-height: 56px;
+
+  border: var(--black) 2px solid;
+  border-radius: 14px;
+
+  margin: 0 16px 60px;
+}
+
+#inputField {
+  min-width: 70%;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+
+  font-size: 18px;
+}
+
+#inputButton {
+  position: absolute;
+  right: 10px;
+  margin: 10px 0;
+  padding: 5px 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--black);
+  color: white;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 1px;
+
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  background-color: var(--white);
+
+  padding: 8px 16px 10px 16px;
+}
+
+/* <----------------Стили Словаря-------------------> */
+.inputForm, .content {
+  width: 500px;
+}
+
+
+.content {
+  border-radius: 8px;
+  background: rgb(240, 240, 240);
+  background: linear-gradient(90deg, var(--ligth-grey) 50%, var(--grey) 50%);
+
+  margin-bottom: 60px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  min-height: 40px;
+  /* Делает границу по центру */
+  background: linear-gradient(var(--black), var(--black)) no-repeat center/2px
+    100%;
+}
+
+.rowCross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 15px;
+
+  border: none;
+  border-radius: 50%;
+
+  width: 10px;
+  height: 10px;
+}
+
+.ru {
+  position: absolute;
+  left: 5%;
+}
+
+.tr {
+  position: absolute;
+  left: 55%;
+}
+
+.index {
+  margin-right: 10px;
+}
+
+/* <----------------Стили Кнопки Очистить-------------------> */
+.clearAll {
+  position: relative;
+}
+
+#clearButton {
+  width: 250px;
+  height: 50px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--grey);
+
+  font-size: 18px;
+}
+
+#clearCross {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+}
+
+@media (min-width: 530px) and (max-width: 767px) {
+  .header {
+    font-size: 36px;
+  }
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 529px) {
+  * {
+    font-size: 16px;
+  }
+  
+  .inputForm, .content {
+    width: 90%;
+  }
+  
+  .header {
+    font-size: 30px;
+  }
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  * {
+    font-size: 16px;
+  }
+  
+  .header {
+    font-size: 30px;
+  }
+
+  .inputForm, .content {
+    width: 90%;
+  }
+
+  #inputField {
+    width: 80%;
+  }
+
+  #inputButton {
+    position: absolute;
+    top: 100%;
+    right: 30%;
+  }
+  
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
